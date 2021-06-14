@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DodajRekord">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="2"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/producent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/producenttv" />
+
+            <EditText
+                android:id="@+id/editTextProducent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:ems="10"
+                android:inputType="text"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/modelTelefonu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/modeltv" />
+
+            <EditText
+                android:id="@+id/editTextModel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:ems="10"
+                android:inputType="text"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/androidWersja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/androidtv" />
+
+            <EditText
+                android:id="@+id/editTextAndroid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:ems="10"
+                android:inputType="text"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/stronaWww"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stronatv" />
+
+            <EditText
+                android:id="@+id/editTextStrona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:ems="10"
+                android:inputType="text"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonStrona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button1"
+                android:layout_marginEnd="5dp"
+                android:onClick="odpalStrone"/>
+
+            <Button
+                android:id="@+id/buttonAnuluj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button2"
+                android:onClick="anulujOperacje"/>
+
+            <Button
+                android:id="@+id/buttonZapisz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button3"
+                android:layout_marginStart="5dp"
+                android:onClick="zapiszDane"/>
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

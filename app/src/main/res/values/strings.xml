@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">lab2</string>
+    <string name="producenttv">Producent: </string>
+    <string name="modeltv">Model telefonu: </string>
+    <string name="androidtv">Wersja androida: </string>
+    <string name="stronatv">Strona internetowa: </string>
+
+    <string name="button1">Strona</string>
+    <string name="button2">Anuluj</string>
+    <string name="button3">Zapisz</string>
+
+    <string name="error">Pole nie moze byc puste!</string>
+</resources>
